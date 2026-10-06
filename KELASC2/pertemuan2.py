@@ -49,4 +49,4 @@
 
 # a = int(input("masukan nilai a:"))
 # b = int(input("masukan nilai b:"))
-# c = a * b gitgit 
+# # c = a * b gitgit
