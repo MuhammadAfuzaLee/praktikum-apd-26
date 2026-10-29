@@ -1,6 +1,5 @@
 import os
 
-# ===== Variabel global =====
 data_user = {
     "admin": {"password": "admin123", "role": "admin"}
 }
