@@ -13,7 +13,7 @@ batas_login = 3
 login_gagal = 0
 
 
-# ===== Prosedur =====
+
 def bersihkan():
     os.system("cls" if os.name == "nt" else "clear")
 
@@ -22,7 +22,7 @@ def tunggu():
     input("Tekan enter...")
 
 
-# ===== Fungsi tanpa parameter =====
+
 def input_kode():
     kode = input("Kode kunci: ")
     if kode == "":
@@ -35,14 +35,14 @@ def jumlah_dipinjam():
     return hitung_dipinjam(daftar, 0)
 
 
-# ===== Fungsi dengan parameter =====
+
 def cek_login(username, password):
     if username not in data_user or data_user[username]["password"] != password:
         raise ValueError("Username atau password salah")
     return data_user[username]["role"]
 
 
-# Fungsi rekursif
+
 def hitung_dipinjam(daftar, i):
     if i == len(daftar):
         return 0
@@ -51,7 +51,7 @@ def hitung_dipinjam(daftar, i):
     return hitung_dipinjam(daftar, i + 1)
 
 
-# ===== Prosedur fitur =====
+
 def lihat_kunci(admin):
     if len(data_kunci) == 0:
         print("Data kunci masih kosong")
@@ -263,7 +263,7 @@ def register():
         tunggu()
 
 
-# ===== Program utama =====
+
 while True:
     if login_gagal >= batas_login:
         print("Terlalu banyak gagal login, program dihentikan")
